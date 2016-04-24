@@ -13,21 +13,15 @@
 namespace WellCommerce\Bundle\ClientBundle\Entity;
 
 /**
- * Interface ClientBillingAddressInterface
+ * Interface ClientShippingAddressAwareInterface
  *
  * @author  Adam Piotrowski <adam@wellcommerce.org>
  */
-interface ClientBillingAddressInterface extends ClientAddressInterface
+interface ClientShippingAddressAwareInterface
 {
-    public function setVatId(string $vatId);
+    public function getShippingAddress() : ClientShippingAddressInterface;
 
-    public function getVatId() : string;
+    public function setShippingAddress(ClientShippingAddressInterface $shippingAddress);
 
-    public function setCompanyName(string $companyName);
-
-    public function getCompanyName() : string;
-
-    public function isCompanyAddress() : bool;
-
-    public function setCompanyAddress(bool $companyAddress);
+    public function hasShippingAddress() : bool;
 }
