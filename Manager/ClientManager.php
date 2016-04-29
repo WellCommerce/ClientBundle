@@ -10,18 +10,18 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace WellCommerce\Bundle\ClientBundle\Manager\Front;
+namespace WellCommerce\Bundle\ClientBundle\Manager;
 
 use WellCommerce\Bundle\ClientBundle\Entity\ClientInterface;
 use WellCommerce\Bundle\ClientBundle\Exception\ResetPasswordException;
-use WellCommerce\Bundle\CoreBundle\Manager\Front\AbstractFrontManager;
+use WellCommerce\Bundle\CoreBundle\Manager\AbstractManager;
 
 /**
- * Class ClientForgotPasswordManager
+ * Class ClientManager
  *
  * @author  Adam Piotrowski <adam@wellcommerce.org>
  */
-class ClientForgotPasswordManager extends AbstractFrontManager
+class ClientManager extends AbstractManager
 {
     public function resetPassword($username)
     {

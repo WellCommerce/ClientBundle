@@ -10,16 +10,15 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace WellCommerce\Bundle\ClientBundle\Manager\Front;
+namespace WellCommerce\Bundle\ClientBundle\Manager;
 
-use WellCommerce\Bundle\CoreBundle\Manager\Front\AbstractFrontManager;
+use WellCommerce\Bundle\CoreBundle\Manager\AbstractManager;
 
 /**
- * Class ClientManager
+ * Class ClientGroupManager
  *
  * @author  Adam Piotrowski <adam@wellcommerce.org>
  */
-class ClientManager extends AbstractFrontManager
+class ClientGroupManager extends AbstractManager
 {
-
 }
